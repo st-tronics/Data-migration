@@ -13,13 +13,6 @@ import {
   CardContent,
   Chip,
   Alert,
-  Timeline,
-  TimelineItem,
-  TimelineSeparator,
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
-  TimelineOppositeContent,
   Accordion,
   AccordionSummary,
   AccordionDetails,
@@ -35,6 +28,15 @@ import {
   TableHead,
   TableRow,
 } from '@mui/material';
+import {
+  Timeline,
+  TimelineItem,
+  TimelineSeparator,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+  TimelineOppositeContent,
+} from '@mui/lab';
 import {
   ArrowBack as ArrowBackIcon,
   Download as DownloadIcon,
