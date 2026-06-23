@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1976d2" />
+    <meta
+      name="description"
+      content="Enterprise Data Migration Planning and Delivery Tool - Plan and execute large-scale database migrations to AWS, Azure, and GCP"
+    />
+    <meta name="keywords" content="data migration, database migration, cloud migration, AWS, Azure, GCP, enterprise migration tool" />
+    <meta name="author" content="Data Migration Tool Team" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Data Migration Planning Tool" />
+    <meta property="og:description" content="Enterprise solution for planning and executing large-scale database migrations to cloud platforms" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Data Migration Planning Tool" />
+    <meta property="twitter:description" content="Enterprise solution for planning and executing large-scale database migrations" />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>Data Migration Planning Tool - Demo</title>
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #f5f5f5;
+      }
+      
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+          monospace;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      /* Loading spinner */
+      .loading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid rgba(255, 255, 255, 0.3);
+        border-top-color: #fff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      .loading-text {
+        color: white;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div style="padding: 20px; text-align: center; font-family: Arial, sans-serif;">
+        <h1>JavaScript Required</h1>
+        <p>You need to enable JavaScript to run this application.</p>
+        <p>This is an enterprise data migration planning tool that requires JavaScript for full functionality.</p>
+      </div>
+    </noscript>
+    
+    <div id="root">
+      <!-- Loading indicator shown while React app loads -->
+      <div class="loading-container">
+        <div style="text-align: center;">
+          <div class="loading-spinner"></div>
+          <div class="loading-text">Loading Data Migration Tool...</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Demo Mode Banner Script -->
+    <script>
+      // Add demo mode banner if in demo mode
+      if (window.location.hostname.includes('netlify.app')) {
+        window.addEventListener('DOMContentLoaded', function() {
+          const banner = document.createElement('div');
+          banner.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; background: #ff9800; color: white; padding: 8px; text-align: center; z-index: 9999; font-size: 14px; font-weight: 500;';
+          banner.innerHTML = '🚀 Demo Mode - Using Mock Data | <a href="https://github.com/YOUR_REPO" style="color: white; text-decoration: underline;">View Full Documentation</a>';
+          document.body.appendChild(banner);
+          
+          // Adjust root padding to account for banner
+          const root = document.getElementById('root');
+          if (root) {
+            root.style.paddingTop = '40px';
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
