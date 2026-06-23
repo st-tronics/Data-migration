@@ -12,7 +12,6 @@
   REACT_APP_API_URL = "/.netlify/functions"
   REACT_APP_DEMO_MODE = "true"
   CI = "false"
-  NODE_OPTIONS = "--openssl-legacy-provider"
 
 # Redirect all requests to index.html for client-side routing
 [[redirects]]
